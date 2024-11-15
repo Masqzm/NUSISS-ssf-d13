@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration</h1>
+
+    <form method="POST" action="/registration">
+        <input type="hidden" name="passphrase" value="secret">
+        <table>
+            <tr>
+                <td>Name: </td>
+                <td>
+                    <input type="text" name="name" id="name">
+                </td>
+            </tr>
+            <tr>
+                <td>Email: </td>
+                <td>
+                    <input type="email" name="email" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td>Comments: </td>
+                <td>
+                    <textarea name="comments" id="comments"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="submit">Send</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registered successfully!</h1>
+    <!-- mtd1 -->
+    <h2>Please check your email: <code data-th-text="${email}"></code></h2>
+    
+    <!-- mtd2a -->
+    <h2>Please check your email: <code data-th-text="${reg.email}"></code></h2>
+
+    <!-- mtd2b -->
+    <div data-th-object="${reg}">
+        <h2>Please check your email: <code data-th-text="*{email}"></code></h2>
+    </div>
+
+</body>
+</html>
